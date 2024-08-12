@@ -1,9 +1,8 @@
 import React, { useMemo } from "react";
 import useCart from "../hooks/useCart";
-import { useHistory } from "react-router-dom";
-
-import toast from "react-hot-toast";
 import { confirmAlert } from "react-confirm-alert"; // Import the library
+import { useHistory } from "react-router-dom";
+import toast from "react-hot-toast";
 import "react-confirm-alert/src/react-confirm-alert.css"; // Import the CSS for the library
 
 const Cart = () => {

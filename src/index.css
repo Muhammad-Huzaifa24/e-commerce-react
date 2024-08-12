@@ -450,165 +450,21 @@ header {
   background-color: #a50d22;
 }
 
-/* update product dialogue styling */
+/* 
+##################################################
 
-/* Dialog Overlay */
-.dialog-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}
+              Swipe Button - Add product 
 
-/* Dialog Content */
-.dialog-content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  width: 90%;
-  max-width: 500px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
-  margin: 10px; /* Prevents the content from touching the edges on small screens */
-}
+##################################################
 
-/* Form styling */
-.dialog-content form {
-  display: flex;
-  flex-direction: column;
-}
-
-.dialog-content label {
-  margin-bottom: 15px;
-}
-
-.dialog-content input,
-.dialog-content textarea {
-  width: 100%;
-  padding: 8px;
-  margin-top: 4px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.dialog-content button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  margin: 10px 0;
-}
-
-.dialog-content button[type="submit"] {
-  background-color: #4caf50;
-  color: #fff;
-}
-.dialog-content button[type="submit"]:hover {
-  background-color: #a7cca9;
-  color: #fff;
-}
-
-.dialog-content button[type="button"] {
-  background-color: #f44336;
-  color: #fff;
-}
-.dialog-content button[type="button"]:hover {
-  background-color: #d4a29e;
-  color: #fff;
-}
-
-/* Add product form styling */
-
-.add-product-form-container {
-  /* border: 1px solid black; */
-  padding: 10px 20px;
-  max-width: 900px;
-  margin: 0 auto;
-
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 4px 6px rgba(211, 211, 211, 0.6);
-}
-.add-product-form-container h2 {
-  text-align: center;
-  font-family: "Jost";
-  padding: 20px 0px;
-}
-.add-product-form {
-  max-width: 800px;
-  margin: 0 auto;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-.add-product-form label {
-  margin-bottom: 1rem;
-}
-.add-product-form input,
-textarea {
-  background-color: white;
-  margin-top: 10px;
-  padding: 10px 10px;
-  border: 1px solid #b1c9c8;
-  border-radius: 5px;
-}
-
-.add-product-form button {
-  border-radius: 5px;
-  background-color: teal;
-  padding: 10px 0px;
-  border: none;
-  color: white;
-}
-.add-product-form button:hover {
-  background-color: rgb(143, 219, 219);
-}
-/* Responsive Styles */
-@media (max-width: 600px) {
-  .dialog-content {
-    width: 95%;
-    max-width: 100%;
-    padding: 15px;
-  }
-
-  .dialog-content button {
-    width: 100%;
-    margin: 5px 0;
-  }
-}
-
-@media (max-width: 400px) {
-  .dialog-content {
-    padding: 10px;
-  }
-
-  .dialog-content input,
-  .dialog-content textarea {
-    padding: 6px;
-  }
-
-  .dialog-content button {
-    font-size: 14px;
-    padding: 8px;
-  }
-}
-
-/* Swipe Button - Add product */
-/* styles.css */
+*/
 .swipe-button-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 2.5rem;
-  position: relative; /* For positioning the pseudo-element */
-  overflow: hidden; /* Ensure the pseudo-element does not overflow */
+  position: relative;
+  overflow: hidden;
 }
 
 .swipe-button {
@@ -617,11 +473,11 @@ textarea {
   cursor: pointer;
   background-color: red;
   color: white;
-  border: 1px solid transparent; /* Initial border is transparent */
-  position: relative; /* Positioning for the pseudo-element */
-  z-index: 1; /* Ensure the text is above the pseudo-element */
-  overflow: hidden; /* Ensure the pseudo-element stays within the button */
-  transition: color 0.3s ease, border-color 0.3s ease; /* Smooth transition for color and border */
+  border: 1px solid transparent;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 .swipe-button::after {
@@ -642,11 +498,19 @@ textarea {
 }
 
 .swipe-button:hover {
-  color: red; /* Change text color to red on hover */
-  border-color: red; /* Add red border on hover */
+  color: red;
+  border-color: red;
 }
 
-/* Add product and update product forms */
+/* 
+##################################################
+
+        Add product and update product forms
+
+##################################################
+
+*/
+
 .modal {
   position: fixed;
   top: 0;
@@ -666,8 +530,8 @@ textarea {
   width: 90%;
   max-width: 800px;
   position: relative;
-  max-height: 90vh; /* Adjust height for better visibility on mobile */
-  overflow-y: auto; /* Allow scrolling within the modal */
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 .close {
@@ -713,25 +577,15 @@ textarea {
   background-color: rgb(50, 199, 199);
 }
 
-@media (max-width: 768px) {
-  .modal-content {
-    width: 95%;
-    padding: 15px;
-  }
+/* 
+##################################################
 
-  .modal-content form {
-    flex-direction: column;
-  }
+       classes for rating stars
 
-  .modal-content form label,
-  .modal-content form input,
-  .modal-content form textarea,
-  .modal-content form button {
-    width: 100%;
-  }
-}
+##################################################
 
-/* classes for rating stars */
+*/
+
 .checked {
   color: orange; /* Color for filled stars */
 }
@@ -765,6 +619,21 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .modal-content form {
+    flex-direction: column;
+  }
+
+  .modal-content form label,
+  .modal-content form input,
+  .modal-content form textarea,
+  .modal-content form button {
+    width: 100%;
+  }
   .contact-form-container {
     padding: 1rem;
   }

@@ -237,7 +237,7 @@ import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
 import Loader from "./Loader";
 import useProductStore from "../hooks/useProductStore";
-import SwipeButton from "./SwipeButton";
+import SwipeButton from "./AddProductButton";
 import useCart from "../hooks/useCart";
 import UpdateProductForm from "./UpdateProduct";
 import Rating from "@mui/material/Rating";

@@ -9,7 +9,6 @@ import ProductDetailPage from "./pages/ProductDetailPage";
 import CartPage from "./pages/CartPage";
 import CheckOutPage from "./pages/CheckOutPage";
 import Header from "./components/Header";
-import AddProduct from "./components/add-product";
 
 const App = () => {
   return (
@@ -33,9 +32,6 @@ const App = () => {
           </Route>
           <Route path="/checkoutPage">
             <CheckOutPage />
-          </Route>
-          <Route path="/add-product">
-            <AddProduct />
           </Route>
         </Switch>
       </div>

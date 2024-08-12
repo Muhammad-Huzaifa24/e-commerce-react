@@ -3,15 +3,10 @@ import OrderForm from "../components/OrderForm";
 import Loader from "../components/Loader";
 import useCart from "../hooks/useCart";
 import useDelayedLoading from "../hooks/useDelayLoading";
-import { useHistory } from "react-router-dom";
 
 const CheckoutPage = () => {
-  const history = useHistory();
   const { cart, increaseQuantity, decreaseQuantity } = useCart();
 
-  const handleGoBack = () => {
-    history.goBack(); // Navigates to the previous page
-  };
   const loading = useDelayedLoading(500); // Adjust the delay as needed
 
   if (loading) {
@@ -24,42 +19,15 @@ const CheckoutPage = () => {
 
   return (
     <>
-      <button
-        onClick={handleGoBack}
-        style={{
-          position: "absolute",
-          top: "20px",
-          left: "20px",
-          background: "none",
-          border: "none",
-          cursor: "pointer",
-          fontSize: "24px",
-          color: "#333",
-        }}
-      >
-        ←
-      </button>
       <div
         className="checkout-page"
         style={{
           maxWidth: "1200px",
           margin: "auto",
           padding: "20px",
-          marginTop: "5rem",
           backgroundColor: "",
         }}
       >
-        {/* <h2
-        style={{
-          fontFamily: "Jost",
-          marginBottom: "20px",
-          fontSize: "38px",
-          textAlign: "center",
-        }}
-      >
-        Checkout
-      </h2> */}
-
         <div
           className="checkout-content"
           style={{ display: "flex", flexDirection: "column", gap: "20px" }}

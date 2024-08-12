@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import AddProductForm from "./add-product-form";
+import AddProductForm from "./AddProduct";
 
 const SwipeButton = ({ onAddProduct }) => {
   const [isFormOpen, setIsFormOpen] = useState(false);
